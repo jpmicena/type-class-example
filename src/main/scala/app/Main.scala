@@ -3,6 +3,7 @@ package app
 import domain.Syntax._
 import domain.Utils._
 import infra.pokemon_gen_one.Implicits._
+import infra.pokemon_gen_two.Implicits._
 
 import external.pokemon_gen_one._
 import external.pokemon_gen_two._
@@ -17,5 +18,9 @@ object Main extends App {
   println("All evolutions: " + allEvolutions(genOnePokemon))
 
   val genTwoPokemon: PokemonGenTwo = Cyndaquil
+  println("My pokemon trained once and became: " + genTwoPokemon.trained.name)
+  println("My pokemon trained twice and became: " + genTwoPokemon.trained.trained.name)
+  println("My pokemon trained thrice and became: " + genTwoPokemon.trained.trained.trained.name)
+  println("All evolutions: " + allEvolutions(genTwoPokemon))
 
 }

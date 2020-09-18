@@ -15,7 +15,7 @@ object Cyndaquil extends PokemonGenTwo with NextForm {
 
 object Quilava extends PokemonGenTwo with NextForm {
   override def name: String = "Quilava"
-  override def nextForm: PokemonGenTwo = Cyndaquil
+  override def nextForm: PokemonGenTwo = Typhlosion
 }
 
 object Typhlosion extends PokemonGenTwo {
